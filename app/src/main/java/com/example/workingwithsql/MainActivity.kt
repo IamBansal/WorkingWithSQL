@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AddSubject::class.java))
         }
 
+        //Just for checking the firebase vala scene.
+        findViewById<Button>(R.id.btnFireBAse).setOnClickListener {
+            startActivity(Intent(this, LoginSignUp::class.java))
+        }
 
         lists = ArrayList<CustomItem>()
         DB = SQLHelper(applicationContext)
