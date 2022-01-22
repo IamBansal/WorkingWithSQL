@@ -30,5 +30,9 @@ class AddSubject : AppCompatActivity() {
             startActivity(Intent(this, ProfileUpdate::class.java))
         }
 
+        findViewById<Button>(R.id.btnProfileInfo).setOnClickListener {
+            startActivity(Intent(this, ProfileInfo::class.java))
+        }
+
     }
 }

@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginSignUp::class.java))
         }
 
+        findViewById<Button>(R.id.btnUpload).setOnClickListener {
+            startActivity(Intent(this, ImageUploader::class.java))
+        }
+
         lists = ArrayList<CustomItem>()
         DB = SQLHelper(applicationContext)
         data = DB.dataGetter
@@ -42,6 +46,11 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(applicationContext, 1)
         recyclerView.adapter = adapter
 
+    }
+
+    //For exitting the app when back is pressed at launcher.
+    override fun onBackPressed() {
+        finishAffinity()
     }
 
     private fun showData(){

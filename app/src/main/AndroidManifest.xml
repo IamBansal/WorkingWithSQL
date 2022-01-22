@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkingWithSQL">
         <activity
+            android:name=".ImageUploader"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileInfo"
+            android:exported="false" />
+        <activity
             android:name=".ProfileUpdate"
             android:exported="false" />
         <activity

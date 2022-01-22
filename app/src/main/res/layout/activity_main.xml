@@ -24,7 +24,7 @@
         android:textStyle="italic|bold" />
 
     <Button
-        android:id="@+id/btnFireBAse"
+        android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -34,11 +34,28 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
-        android:layout_alignParentLeft="true"
-        android:text="Login/Signup"
+        android:text="Upload\nPhoto"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/btnFireBAse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Login/\nSignup"
         android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         android:textStyle="italic|bold" />
 
     <androidx.recyclerview.widget.RecyclerView
